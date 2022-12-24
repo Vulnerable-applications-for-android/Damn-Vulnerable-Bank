@@ -4,7 +4,6 @@ apply plugin: 'com.google.gms.google-services'
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
-    android.ndkVersion  "21.3.6528147"
     defaultConfig {
         applicationId "com.app.damnvulnerablebank"
         minSdkVersion 21
@@ -25,6 +24,7 @@ android {
         cmake {
             path file('CMakeLists.txt')
         }
+        android.ndkVersion  "21.3.6528147"
     }
 }
 
